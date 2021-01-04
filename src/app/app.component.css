@@ -1,0 +1,291 @@
+body {
+margin: 0;
+overflow-x: hidden;
+
+font-family: Arial, Helvetica, sans-serif;
+}
+.outer{
+    overflow-x: hidden;
+}
+.topnav {
+overflow: hidden;
+width:100vw;
+display:flex;
+height:60px;
+flex-direction: row;
+background-color:transparent;
+}
+
+.topnav a {
+float: left;
+color:#222222;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+
+
+.topnav a:hover {
+background-color: transparent;
+color: black;
+opacity: .8;
+
+}
+
+.topnav a.active {
+background-color: #4CAF50;
+color: white;
+}
+
+.topnav-left{
+float: left;
+width:55%;
+}
+
+.topnav-right {
+background-image: url("../assets/img/blob-small.svg");
+background-repeat: no-repeat;
+background-position:top;
+background-size: 65% 100%;
+width: 45%;
+height:555px;
+
+float: right;
+}
+.topnav-right a{
+opacity: .6;
+}
+
+
+.btn-round{
+
+box-shadow: 0px 0px 20px #00000033;
+border-radius: 25px;
+border:1.2px solid purple;
+
+}
+.nav-button{
+border-radius: 25px;
+border:1.2px solid purple;
+
+}
+
+.nav-button:nth-of-type(1){
+background: silver;
+
+
+}
+.nav-button:nth-of-type(2){
+background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+color:#FFF !important;
+}
+
+.intro{
+width:550px;
+display: flex;
+background-image: url("../assets/img/blob-small.svg");
+background-repeat: no-repeat;
+background-position:left;
+background-size: 65% 100%;
+height:500px;
+background-clip: content-box;
+}
+
+
+/*
+.intro-bg{
+background-image: url("img/circle.svg");
+background-position: top;
+background-size: 20 30;
+height:500px;
+background-clip: content-box;
+}*/
+.no-border{
+    border:0px ;
+    width:100%;
+    padding: 5px;
+    border-bottom: 2px silver solid !important;
+}
+.intro-head{
+color:  #222222;
+opacity: .8;
+position: relative;
+left:115px;
+top:85px;
+width:250px !important;
+font-size: 22px;
+font-style: helvetica;
+letter-spacing: 2px;
+}
+.intro-head h4{
+    width:250px !important;
+
+}
+.intro-border{
+border-bottom: 4px solid #222222;
+border-radius: 8px;
+position: absolute;
+top:14%;
+width:55%;
+
+}
+.border-curve{
+border-radius: 6px;
+}
+.intro-img{
+background-image: url("../assets/img/collect_img-video.png") ;
+background-repeat:no-repeat;
+width:25%;
+
+background-size: cover;
+background-position:center;
+border-radius: 8px;
+height:170px;
+position: relative;
+top:-295px;
+left:8%;
+
+}
+
+.nav-link{
+color:gray;
+font-weight:bold;
+}
+.nav-link:hover{
+background:#FFF !important;
+color:powderblue;
+}
+.form-head{
+font-weight: bold;
+
+opacity: .7;
+}
+
+.form-row{
+position: relative;
+
+top:15%;
+background-position: center;
+display: flex;
+}
+.emi-form{
+padding: 1rem;
+padding-top: 0px;
+height:450px;
+width:350px;
+position: relative;
+left:100%;
+background:#FFF;
+border:1px solid #cfcdcd;
+}
+.form-group{
+padding: 5px;
+margin:8px 5px 12px 5px;
+
+}
+input {
+    width:100%;
+}
+.text-center{
+text-align: center;
+}
+.m-auto{
+margin:auto
+}
+.income-label,.income-value{
+color:silver;
+list-style-type: none;
+display: inline-block;
+}
+.income-label{
+font-size:13px;
+}
+.income-value{
+color:#222222;
+font-weight: bold;
+}
+.income-label:nth-of-type(2)
+{
+float: right;
+}
+.emi-form-subhead{
+    width:100%;
+color:rgb(94, 88, 88);
+font-size:small;
+}
+.emi-form-res-outer{
+color:#FFF;
+position: relative;
+top:12%;
+left:100%;
+width:35%;
+padding-top:15%;
+height:75%;
+background: rgba(175, 61, 175, 0.7);
+}
+.emi-form-res-subhead{
+    font-size: 12px;
+width:100 !important;
+}
+
+.emi-res-submitBtn{
+height:35px;
+position: relative;
+width:100%;
+z-index: 999;
+color:purple;
+}
+
+
+.emi-res-submitBtn:hover{
+    cursor: pointer;
+color:#FFF;
+background-color:purple;
+}
+@media screen and (max-width:568px)
+{
+.topnav{
+    display:block;
+}
+.topnav-left{
+    position: relative;
+    left:40%;
+}
+.topnav-right{
+    display: flex;
+    top:60px;
+    position: absolute;
+    width:100%;
+    left:25px;
+    margin: auto;
+
+}
+form{
+    padding:1rem;
+}
+.nav-button{
+    display: none;
+}
+
+    .intro{
+    display:block;
+}
+.intro-img{
+    width:85%;
+}
+.intro-head{
+    left:25px;
+}
+.form-row{
+    top:75%;
+}
+.emi-form{
+    left:-85%;
+}
+.main{
+    display: block;
+}
+    
+}
